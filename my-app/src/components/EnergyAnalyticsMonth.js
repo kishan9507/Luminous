@@ -56,7 +56,7 @@ function EnergyAnalytics() {
           <>
             <Line data={chartData} />
             <Typography variant="body2" style={{ marginTop: '10px' }}>
-              This chart shows your energy consumption over time.
+              This chart shows your energy consumption over the last 12 months.
             </Typography>
           </>
         )}

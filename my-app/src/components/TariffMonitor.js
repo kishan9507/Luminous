@@ -70,9 +70,11 @@ function TariffMonitor() {
         console.log("Selected Time:", event.target.value);
     };
 
-    // Get current and upcoming prices based on selected time
+    // Get current prices based on selected time
     const currentPrice = tariffs.find(tariff => tariff.time === selectedTime);
-    const upcomingPrices = futureTariffs.filter(futureTariff => futureTariff.time === selectedTime);
+
+    // Get upcoming prices based on selected time (next two)
+    const upcomingPrices = futureTariffs.filter(futureTariff => futureTariff.time > selectedTime).slice(0,2); // Get next two upcoming prices
 
     return (
         <Card variant="outlined" style={{ marginBottom:'20px' , borderRadius:'8px'}}>
@@ -121,7 +123,7 @@ function TariffMonitor() {
                                 selectedTime && upcomingPrices.length >0 && (
                                     <>
                                         <Typography variant="h6" style={{ marginTop :'20px' , textAlign :'center'}}>
-                                            Upcoming Prices (Forecast)
+                                            Upcoming Prices
                                         </Typography>
                                         <Grid container spacing={2}>
                                             {
