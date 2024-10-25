@@ -1,0 +1,57 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a default font family and background color */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
+                 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 
+                 sans-serif;
+    background-color: #F7F7F7; /* Light gray background */
+    color: #333; /* Darker text color for better readability */
+    -webkit-font-smoothing: antialiased; /* Smooth font rendering on WebKit browsers */
+    -moz-osx-font-smoothing: grayscale; /* Smooth font rendering on Firefox */
+}
+
+/* Center the main heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Larger font size for the main title */
+}
+
+/* Style for containers to ensure proper spacing */
+.container {
+    padding: 20px;
+}
+
+/* Example styling for buttons */
+button {
+    background-color: #6200ea; /* Primary color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3700b3; /* Darker shade on hover */
+}
+
+/* Snackbar styles (if needed) */
+.snackbar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Additional styles for cards and layouts if needed */
+.card {
+    margin-bottom: 20px; /* Space between cards */
+}
