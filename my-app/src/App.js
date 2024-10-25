@@ -8,7 +8,7 @@ import { Container } from '@mui/material';
 function App() {
   return (
     <Container maxWidth="lg">
-      <h1 style={{ textAlign: 'center' }}>Energy Optimization Platform</h1>
+      <h1 style={{ textAlign: 'center',backgroundColor:'green' }}>Energy Optimization Platform</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
