@@ -79,7 +79,7 @@ function TariffMonitor() {
     return (
         <Card variant="outlined" style={{ marginBottom:'20px' , borderRadius:'8px'}}>
             <CardContent>
-                <Typography variant="h5" style={{ marginBottom:'20px' , textAlign:'center' , fontWeight:'bolder' , fontFamily :'serif' , textTransform :'uppercase'}}>
+                <Typography variant="h5" style={{ marginBottom:'20px' , textAlign:'center' ,backgroundColor:'lightgreen', fontWeight:'bolder' , fontFamily :'serif' , textTransform :'uppercase'}}>
                     Real-Time Tariff Monitoring
                 </Typography>
 
